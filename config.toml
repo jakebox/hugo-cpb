@@ -1,0 +1,5 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Jacob I. Boxerman Commonplace Book"
+copyright = "© Jacob I. Boxerman"
+disableKinds = ["taxonomy", "taxonomyTerm"]
