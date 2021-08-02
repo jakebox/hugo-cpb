@@ -3,6 +3,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}Home{{ else}}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
 
+  <!-- <link rel="stylesheet" type="text/css" href="{{ .Params.jbcss1 }}"/> -->
+  <!-- <link rel="stylesheet" type="text/css" href="{{ .Params.jbcss2 }}"/> -->
+
+  <!-- <script src="{{ .Params.jbscript1 }}"></script> -->
+  <!-- <script src="{{ .Params.jbscript2 }}"></script> -->
+
+  <!-- <script type="text/javascript" src="{{ .Params.jbjs1 }}"></script> -->
+  <!-- <script type="text/javascript" src="{{ .Params.jbjs2 }}"></script> -->
+
+  {{ if (not (isset .Params "jbcss1TEMP")) }}
   {{ $style := resources.Get "css/style.scss" | toCSS | minify }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  {{ end }}
+
 </head>

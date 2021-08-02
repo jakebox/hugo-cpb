@@ -1,5 +1,21 @@
-baseURL = "http://example.org/"
+baseURL = "https://jb-cpb.s3.us-east-2.amazonaws.com/"
 languageCode = "en-us"
 title = "Jacob I. Boxerman Commonplace Book"
 copyright = "© Jacob I. Boxerman"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+uglyurls = true
+
+[markup]
+  [markup.highlight]
+      codeFences = true
+      guessSyntax = false
+      style = "lovelace"
+  [markup.goldmark.renderer]
+      unsafe = true
+
+[deployment]
+[[deployment.targets]]
+name = "cpbdeploy"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+ URL = "s3://jb-cpb?region=us-east-2"
