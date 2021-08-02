@@ -13,8 +13,8 @@ $border-radius: $padding-4 !default;
 
 $body-font-weight: normal !default;
 
-$body-min-width: 20rem !default;
-$container-max-width: 80rem !default;
+$body-min-width: 10rem !default;
+$container-max-width: 100rem !default;
 
 $header-height: 3.5rem !default;
 $menu-width: 16rem !default;
@@ -35,16 +35,18 @@ $hint-colors: (
   --gray-500: #adb5bd;
 
   --color-link: #0055bb;
-  --color-visited-link: #8440f1;
+  --color-visited-link: #0055bb;
 
   --body-background: white;
-  --body-font-color: black;
+  --body-font-color: rgba(0,0,0,.85);
 
   --icon-filter: none;
 
   --hint-color-info: #6bf;
   --hint-color-warning: #fd6;
   --hint-color-danger: #f66;
+
+  --code-box-bg-color: #f7f7f8;
 }
 
 @mixin theme-dark {
@@ -53,7 +55,7 @@ $hint-colors: (
   --gray-500: rgba(255, 255, 255, 0.5);
 
   --color-link: #84b2ff;
-  --color-visited-link: #b88dff;
+  --color-visited-link: #84b2ff;
 
   --body-background: #343a40;
   --body-font-color: #e9ecef;
@@ -63,4 +65,6 @@ $hint-colors: (
   --hint-color-info: #6bf;
   --hint-color-warning: #fd6;
   --hint-color-danger: #f66;
+
+  --code-box-bg-color: #464f57;
 }
