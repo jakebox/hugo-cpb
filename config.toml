@@ -1,4 +1,4 @@
-baseURL = "https://jb-cpb.s3.us-east-2.amazonaws.com/"
+baseURL = "http://jb-cpb.s3-website.us-east-2.amazonaws.com/"
 languageCode = "en-us"
 title = "Jacob I. Boxerman Commonplace Book"
 copyright = "© Jacob I. Boxerman"
@@ -22,6 +22,6 @@ name = "cpbdeploy"
  URL = "s3://jb-cpb?region=us-east-2"
 
 [params]
-  BookTheme = 'light'
+  BookTheme = 'auto'
   BookSection = '*'
   BookSearch = true
