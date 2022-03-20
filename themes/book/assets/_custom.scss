@@ -26,6 +26,14 @@ h2:before {
     bottom: .45em;
 	right: .2em;
 }
+h2::after {
+    display: inline-block;
+    content: "";
+    border-top: .15rem solid;
+    width: 100%;
+    margin: -50 1rem;
+    transform: translateY(-1rem);
+}
 
 h3 {
 	font-family: 'EB Garamond', serif;
