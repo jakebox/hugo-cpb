@@ -2,3 +2,5 @@
 public/*
 content/*
 resources/*
+static/*
+/.hugo_build.lock
